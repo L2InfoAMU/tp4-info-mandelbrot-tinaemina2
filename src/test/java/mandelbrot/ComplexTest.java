@@ -83,7 +83,7 @@ public class ComplexTest {
     }
 
     @Test
-    void testSubstract(){
+    void testSubtract(){
         assertEquals(minusOne, Complex.ZERO.subtract(Complex.ONE));
         assertEquals(oneMinusI, Complex.ONE.subtract(Complex.I));
         assertEquals(new Complex(real-1,imaginary-1),
