@@ -169,7 +169,7 @@ public class ComplexTest {
    }
 
   @Test
-    void testpow(){
+    void testpower(){
         assertEquals(twoI,onePlusI.pow(2));
         assertEquals(onePlusI.pow(3),new Complex(-2,2));
         assertEquals(Complex.I.pow(3), new Complex(0,-1)) ;
