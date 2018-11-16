@@ -180,6 +180,13 @@ public class ComplexTest {
         assertEquals(Complex.ONE.scale(2),two);
         assertEquals(Complex.ZERO.scale(10),Complex.ZERO);
   }
+  @Test
+    void testequals() {
+        assertEquals(Complex.I.equals(new Complex(0,1)),true );
+        assertEquals(onePlusI.equals(new Complex(1,1)), true);
+      assertEquals(twoI.equals(new Complex(0,2)), true);
+
+  }
 
 
 }
