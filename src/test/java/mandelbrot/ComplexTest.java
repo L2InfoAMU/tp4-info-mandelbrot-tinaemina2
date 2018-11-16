@@ -164,8 +164,8 @@ public class ComplexTest {
    @Test
   void testmodulus() {
         assertEquals(0,Complex.ZERO.modulus());
-        assertEquals(two,two.modulus());
-        assertEquals(two , twoI.modulus());
+        assertEquals(2,two.modulus());
+        assertEquals(2 , twoI.modulus());
    }
 
 
