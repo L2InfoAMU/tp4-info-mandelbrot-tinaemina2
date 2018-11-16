@@ -168,7 +168,13 @@ public class ComplexTest {
         assertEquals(2 , twoI.modulus());
    }
 
+  @Test
+    void testpow(){
+        assertEquals(twoI,onePlusI.pow(2));
+        assertEquals(onePlusI.pow(3),new Complex(-2,2));
+        assertEquals(Complex.I.pow(3), new Complex(0,-1)) ;
 
+  }
 
 
 }

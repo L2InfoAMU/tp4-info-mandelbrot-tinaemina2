@@ -185,8 +185,9 @@ public class Complex {
      */
     Complex pow(int p) {
         if (p == 0)
-            return ZERO;
-        Complex result = (this.multiply(this)).pow(p / 2);
+            return ONE;
+        Complex result=this;
+         result = (result.multiply(result)).pow(p / 2);
         if (p % 2 == 1)
             result = result.multiply(this);
         return result;
